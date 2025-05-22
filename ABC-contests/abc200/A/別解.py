@@ -16,13 +16,7 @@ INF = float('inf')
 #main
 def main():
     N = int(input())
-    ans = 1
-    while True:
-        if N <= ans *100:
-            print(ans)
-            exit()
-
-        ans += 1
+    print((N + 99) // 100)
 
 if __name__ == '__main__':
     main()
