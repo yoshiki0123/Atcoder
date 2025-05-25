@@ -15,17 +15,18 @@ INF = float('inf')
 
 #main
 def main():
-    a, b, c = map(int,input().split())
-
-    if a == b:
-        print(c)
-    elif a == c:
-        print(b)
-    elif b == c:
-        print(a)
-    else:
-        print(0)    
+    N, K = map(int,input().split())
+    AB = []
+    for _ in range(N):
+        AB.append(tuple(map(int,input().split())))
+    AB.sort()
     
+    cur_village = K
+    for i in range(N):
+        if cur_village < AB[i][0]:
+            break
+        cur_village += AB[i][1]
+    print(cur_village)
 
 if __name__ == '__main__':
     main()
