@@ -12,9 +12,17 @@ INF = float('inf')
 #class
 
 #def
+def domino_ptn(i, j, grid):
+    ptn = []
+    
+
 
 #main
 def main():
+    H, W = map(int,input().split())
+    grid = [list(map(int, input().split(' ')) for _ in range(H))]
+
+
     
 
 if __name__ == '__main__':
