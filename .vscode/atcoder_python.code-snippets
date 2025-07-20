@@ -4,7 +4,11 @@
 		"body": [
 			"#library",
 			"import sys, re, heapq",
-			"from math import sin, cos, radians, ceil, floor, sqrt, isqrt, pi, gcd, comb",
+			"from math import (",
+				"sin, cos, radians, ceil, ",
+				"floor, sqrt, isqrt, pi, ",
+				"gcd, comb, factorial",
+			")",
 			"from collections import deque, Counter, defaultdict",
 			"from bisect import bisect, bisect_left, bisect_right",
 			"from functools import lru_cache",
